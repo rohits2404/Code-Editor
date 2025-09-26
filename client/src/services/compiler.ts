@@ -49,7 +49,7 @@ export class CompilerService {
     }
   }
 
-  private simulateExecution(code: string, languageId: number): CompilerResult {
+  private simulateExecution(code: string, _languageId: number): CompilerResult {
     // Simple simulation for demo purposes
     const timestamp = new Date().toLocaleTimeString();
     

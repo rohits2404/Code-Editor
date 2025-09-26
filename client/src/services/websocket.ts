@@ -54,7 +54,7 @@ export class WebSocketService {
     }
   }
 
-  public leaveRoom(roomId: string): void {
+  public leaveRoom(_roomId: string): void {
     if (this.socket && this.roomId) {
       this.socket.emit('leave-room', { roomId: this.roomId });
     }
