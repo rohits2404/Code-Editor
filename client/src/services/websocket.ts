@@ -18,7 +18,7 @@ export class WebSocketService {
     return WebSocketService.instance;
   }
 
-  public connect(serverUrl: string = 'http://localhost:3001', roomId?: string, user?: User): void {
+  public connect(serverUrl: string = 'https://code-editor-0mku.onrender.com', roomId?: string, user?: User): void {
     if (this.socket) return;
 
     this.socket = io(serverUrl, { transports: ['websocket', 'polling'], timeout: 20000, reconnection: true });
